@@ -47,7 +47,6 @@ s = time.time()
 get_request('/index')
 get_request('/index')
 
-
 while request_numb:
     events = slct.select()
     for key, mask in events:

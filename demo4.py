@@ -87,5 +87,4 @@ s = time.time()
 get_request('/index')
 get_request('/index')
 IOLoop.instance().start()
-
 print(tic(s))

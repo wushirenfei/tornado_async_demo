@@ -32,6 +32,7 @@ def coroutine(func):
 
     return wrapper
 
+
 @coroutine
 def get_request(path):
     global request_numb

@@ -23,5 +23,4 @@ def get_request(path):
 s = time.time()
 get_request('/index')
 get_request('/index')
-
 print(tic(s))
