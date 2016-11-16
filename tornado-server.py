@@ -19,30 +19,3 @@ if __name__ == '__main__':
     http_server = httpserver.HTTPServer(app)
     http_server.listen(options.port)
     ioloop.IOLoop.instance().start()
-
-
-# import tornado
-# from tornado.web import (RequestHandler, Application)
-# from tornado.gen import (coroutine, sleep)
-# from tornado.ioloop import IOLoop
-#
-# class Handler(RequestHandler):
-#
-#     content = "hello Python" * 100
-#
-#     @coroutine
-#     def get(self):
-#         print(self.request)
-#         yield sleep(1)
-#         self.write(self.content)
-#
-# routes = [(r"/?.*", Handler)]
-#
-# app = tornado.web.Application(routes)
-#
-# def main():
-#     app.listen(8080)
-#     IOLoop.current().start()
-#
-# if __name__ == "__main__":
-#     main()
